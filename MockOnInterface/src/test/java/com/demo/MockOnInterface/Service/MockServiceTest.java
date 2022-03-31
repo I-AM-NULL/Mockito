@@ -26,7 +26,7 @@ class MockServiceTest {
 	@Mock
 	MockRepository mockRepository ;
 	
-	@InjectMocks
+	@InjectMocks // this annotation covers "mockService.setMockRepository(mockRepository);" action
 	MockService mockService ;
 	
 	
