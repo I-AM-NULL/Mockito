@@ -24,7 +24,7 @@ import com.demo.MockOnInterface.Repository.MockRepository;
 class MockServiceTest {
 	
 	@Mock
-	MockRepository mockRepository = mock(MockRepository.class);
+	MockRepository mockRepository ;
 	
 	@InjectMocks
 	MockService mockService ;
@@ -45,7 +45,7 @@ class MockServiceTest {
 		
 		Mockito.when(mockRepository.getall()).thenReturn(listOfInteger);
 		System.out.println(mockRepository.getall());
-		mockService.setMockRepository(mockRepository);
+		//mockService.setMockRepository(mockRepository);
 		
 		List<MockCustomer> actualIntegers  = mockService.getall();
 		System.out.println("actualIntgers "+actualIntegers);
